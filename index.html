@@ -159,27 +159,5 @@
             <a href="elerhetosegek.html">Elérhetőségek</a>
         </nav>
     </main>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const searchInput = document.getElementById("searchInput");
-            const carItems = document.querySelectorAll(".car-item");
-    
-            searchInput.addEventListener("input", function () {
-                const query = this.value.toLowerCase();
-    
-                carItems.forEach(function (item) {
-                    const content = item.textContent.toLowerCase();
-                    if (content.includes(query)) {
-                        item.style.display = "block";
-                    } else {
-                        item.style.display = "none";
-                    }
-                });
-            });
-        });
-    </script>
-    
-
 </body>
 </html>
